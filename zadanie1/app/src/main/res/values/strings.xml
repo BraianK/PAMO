@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kalkulator BMI</string>
+    <string name="height">Wzrost</string>
+    <string name="weight">Waga</string>
+    <string name="bmiValue">Wartość BMI</string>
+    <string name="bmiValueDefault">0.0</string>
+    <string name="heightDefault">1</string>
+</resources>
