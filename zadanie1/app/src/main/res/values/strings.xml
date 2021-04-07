@@ -5,4 +5,11 @@
     <string name="bmiValue">Wartość BMI</string>
     <string name="bmiValueDefault">0.0</string>
     <string name="heightDefault">1</string>
+    <string name="startImg">logo</string>
+    <string name="startButton">START</string>
+    <string name="checkCaloriesButton">Sprawdź kalorie</string>
+    <string name="title_activity_start_page">StartPage</string>
+    <string name="title_activity_check_calories">CheckCalories</string>
+    <string name="bmiValueLabel">Wartość BMI</string>
+    <string name="calories">Zapotrzebowanie kaloryczne wynosi </string>
 </resources>

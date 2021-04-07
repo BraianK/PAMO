@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 weight = 0.0;
             }
 
-            calculate(); 
+            calculate();
         }
 
         @Override
