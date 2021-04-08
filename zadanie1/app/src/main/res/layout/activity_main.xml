@@ -20,7 +20,7 @@
         <TextView
             android:id="@+id/heightLabelTextView"
             android:layout_width="match_parent"
-            android:layout_height="107dp"
+            android:layout_height="69dp"
             android:gravity="center"
             android:text="@string/height"
             android:textSize="36sp"
@@ -76,7 +76,7 @@
         <TextView
             android:id="@+id/bmiLabelTextView"
             android:layout_width="match_parent"
-            android:layout_height="138dp"
+            android:layout_height="96dp"
             android:gravity="center"
             android:text="@string/bmiValue"
             android:textSize="36sp"
@@ -94,9 +94,10 @@
             app:layout_row="4" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/checkCaloriesButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="sendMessage"
             android:text="@string/checkCaloriesButton"
             app:layout_column="0"
             app:layout_row="7" />

@@ -11,5 +11,11 @@
     <string name="title_activity_start_page">StartPage</string>
     <string name="title_activity_check_calories">CheckCalories</string>
     <string name="bmiValueLabel">Wartość BMI</string>
-    <string name="calories">Zapotrzebowanie kaloryczne wynosi </string>
+    <string name="calories">Zapotrzebowanie kaloryczne: </string>
+    <string name="caloriesValueDefault">0.0</string>
+    <string name="women">Kobieta</string>
+    <string name="man">Mężczyzna</string>
+    <string name="age">Wiek</string>
+    <string name="ageValue">24</string>
+    <string name="foodButton">PRZEPIS</string>
 </resources>

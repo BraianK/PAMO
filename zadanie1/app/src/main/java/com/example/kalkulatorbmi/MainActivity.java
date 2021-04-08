@@ -2,14 +2,15 @@ package com.example.kalkulatorbmi;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import java.text.NumberFormat;
-
 public class MainActivity extends AppCompatActivity {
     private static final NumberFormat weightFormat =
             NumberFormat.getNumberInstance();
@@ -21,7 +22,9 @@ public class MainActivity extends AppCompatActivity {
     private TextView weightTextView;
     private TextView bmiValueTextView;
     private TextView heightTextView;
-
+    public static final String BMI = "com.example.app.CheckCaloriesBMI";
+    public static final String WEIGHT = "com.example.app.CheckCaloriesWEIGHT";
+    public static final String HEIGHT = "com.example.app.CheckCaloriesHEIGHT";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
         SeekBar heightSeekBar =
                 (SeekBar) findViewById(R.id.heightSeekBar);
         heightSeekBar.setOnSeekBarChangeListener(heightBarListener);
+
 
     }
     private void calculate() {
@@ -92,4 +96,21 @@ public class MainActivity extends AppCompatActivity {
         public void beforeTextChanged(
                 CharSequence s, int start, int count, int after) { }
     };
+
+    private void switchActivities() {
+        Intent switchActivityIntent = new Intent(this, CheckCalories.class);
+        startActivity(switchActivityIntent);
+    };
+
+    public void sendMessage(View view) {
+        Intent intent = new Intent(this, CheckCalories.class);
+            TextView textView = (TextView) findViewById(R.id.bmiValueTextView);
+            String message = textView.getText().toString();
+            Bundle bun = new Bundle();
+        bun.putString(BMI, message);
+        bun.putInt(HEIGHT, height);
+        bun.putDouble(WEIGHT, weight);
+        intent.putExtras(bun);
+        startActivity(intent);
+    }
 }
