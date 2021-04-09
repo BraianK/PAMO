@@ -36,9 +36,9 @@
 
     <TextView
         android:id="@+id/caloriesLabel"
-        android:layout_width="321dp"
-        android:layout_height="155dp"
-        android:layout_marginTop="236dp"
+        android:layout_width="329dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="208dp"
         android:gravity="center"
         android:text="@string/calories"
         android:textSize="36sp"
@@ -49,7 +49,7 @@
     <TextView
         android:id="@+id/caloriesValue"
         android:layout_width="283dp"
-        android:layout_height="82dp"
+        android:layout_height="58dp"
         android:gravity="center"
         android:text="@string/caloriesValueDefault"
         android:textSize="36sp"
@@ -57,7 +57,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/caloriesLabel"
-        app:layout_constraintVertical_bias="0.164" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -76,7 +76,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:onClick="onRadioButtonClicked"
             android:text="@string/women"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/radio_man"
@@ -90,8 +89,8 @@
             android:id="@+id/radio_man"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:gravity="center"
-            android:onClick="onRadioButtonClicked"
             android:text="@string/man"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_conversion_absoluteHeight="21dp"
@@ -112,19 +111,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
-    <TextView
-        android:id="@+id/ageValue"
-        android:layout_width="174dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="4dp"
-        android:gravity="center"
-        android:text="@string/ageValue"
-        android:textSize="36sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ageLabel" />
-
     <Button
         android:id="@+id/foodOfferButton"
         android:layout_width="221dp"
@@ -134,4 +120,27 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/caloriesValue" />
+
+    <TextView
+        android:id="@+id/recipe"
+        android:layout_width="364dp"
+        android:layout_height="156dp"
+        android:text="@string/recipe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foodOfferButton" />
+
+    <EditText
+        android:id="@+id/ageValue"
+        android:layout_width="193dp"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/ageValue"
+        app:layout_constraintBottom_toTopOf="@+id/caloriesLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ageLabel"
+        android:autofillHints="" />
 </androidx.constraintlayout.widget.ConstraintLayout>

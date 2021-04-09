@@ -17,5 +17,6 @@
     <string name="man">Mężczyzna</string>
     <string name="age">Wiek</string>
     <string name="ageValue">24</string>
-    <string name="foodButton">PRZEPIS</string>
+    <string name="foodButton">Oblicz i podaj przepis</string>
+    <string name="recipe">Tutaj pojawi się przepis</string>
 </resources>
