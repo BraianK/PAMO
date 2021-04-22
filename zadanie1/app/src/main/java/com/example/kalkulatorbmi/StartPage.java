@@ -29,4 +29,14 @@ public class StartPage extends AppCompatActivity {
         Intent switchActivityIntent = new Intent(this, MainActivity.class);
         startActivity(switchActivityIntent);
     }
+
+
+    public void goToChart(View view) {
+        Intent intent = new Intent(this, Chart.class);
+        startActivity(intent);
+    }
+    public void goToQuiz(View view) {
+        Intent intent = new Intent(this, Quiz.class);
+        startActivity(intent);
+    }
 }
